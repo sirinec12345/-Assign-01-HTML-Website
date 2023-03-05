@@ -1,0 +1,39 @@
+/* This CSS file defines the style for index2.html*/
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color:#F2C9F5
+  ;
+  }
+
+h1 {
+  background-color: #FBEDF7;
+  color: hsl(220, 28%, 47%);
+  padding: 40px;
+  text-align: center;
+}
+ 
+
+
+
+p {
+  background-color:#FBEDF7
+   ;
+  text-align:center;
+}
+
+h5 { background-color:#FBEDF7
+ ;
+    color:rgb(111, 144, 170);
+    padding: 40px;
+    text-align:center;
+    }
+
+img src {
+  text-align:center;
+}
+
