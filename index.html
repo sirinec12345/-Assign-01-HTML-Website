@@ -1,80 +1,78 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="description" content="My First Web Page, with JavaScript">
-    <meta name="keywords" content="immaculata, ics2o">
-    <meta name="author" content="Ms Raffin">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-    <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="./fav_index/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./fav_index/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./fav_index/favicon-16x16.png">
-    <link rel="manifest" href="./fav_index/site.webmanifest">
-    
-    <!-- Google's MDL -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.pink-deep_purple.min.css" />
-    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script> 
-    <title>Assign-01: Create a Website</title>
-  
-  <link href="style.css" rel="stylesheet" type="text/css" />
-  </head>
-  <body>
-    <h1> Assign-01: Create a Website </h1>
-    <button id="demo-show-snackbar" class="mdl-button mdl-js-button mdl-button--raised" type="button">Show Snackbar</button>
-    <div id="demo-snackbar-example" class="mdl-js-snackbar mdl-snackbar">
-      <div class="mdl-snackbar__text"></div>
-      <button class="mdl-snackbar__action" type="button"></button>
-    </div>
-    <script>
-      (function() {
-        'use strict';
-        var snackbarContainer = document.querySelector('#demo-snackbar-example');
-        var showSnackbarButton = document.querySelector('#demo-show-snackbar');
-        var handler = function(event) {
-          showSnackbarButton.style.backgroundColor = '';
-        };
-        showSnackbarButton.addEventListener('click', function() {
-          'use strict';
-          showSnackbarButton.style.backgroundColor = '#' + Math.floor(Math.random() * 0xFFFFFF).toString(16);
-          var data = {
-            message: 'Button color changed.',
-            timeout: 2000,
-            actionHandler: handler,
-            actionText: 'Undo'
-          };
-          snackbarContainer.MaterialSnackbar.showSnackbar(data);
-        });
-      }());
-    </script>
-    <!-- Colored raised button -->
-    <button onclick="myButtonClicked()" class="mdl-button mdl-js-button mdl-button--raised mdl-button-">
-     
-        <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-        <script>
-          function myButtonClicked() {
-            alert("For my next webpages, you shall get ready to laugh out loud because I have prepared for you a series of funny dad jokes. Put your seat belt on, and click on the link to the second webpage, followed by the third one! Have fun! ")
-          }
-        </script>
-        <h1>Hello, World! with JS</h1>
-        <!-- Colored raised button -->
-        <button onclick="myButtonClicked()" class="mdl-button mdl-js-button mdl-button--raised mdl-button--"> Overview </button>
+   <head>
+      <meta charset="utf-8">
+      <meta name="description" content="Assign-01: Create a Website">
+      <meta name="keywords" content="immaculata, ics2o">
+      <meta name="author" content="Sirine Cherkaoui">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- Favicon -->
+      <link rel="apple-touch-icon" sizes="180x180" href="./fav_index/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="./fav_index/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="./fav_index/favicon-16x16.png">
+      <link rel="manifest" href="./fav_index/site.webmanifest">
+      <!-- Google's MDL -->
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+      <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.pink-deep_purple.min.css" />
+      <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script> 
+      <title>Assign-01: Create a Website</title>
+      <link href="style.css" rel="stylesheet" type="text/css" />
+   </head>
+   <body>
+      <h1> Assign-01: Create a Website </h1>
+      <button id="demo-show-snackbar" class="mdl-button mdl-js-button mdl-button--raised" type="button">Show Snackbar</button>
+      <div id="demo-snackbar-example" class="mdl-js-snackbar mdl-snackbar">
+         <div class="mdl-snackbar__text"></div>
+         <button class="mdl-snackbar__action" type="button"></button>
+      </div>
+      <script>
+         (function() {
+           'use strict';
+           var snackbarContainer = document.querySelector('#demo-snackbar-example');
+           var showSnackbarButton = document.querySelector('#demo-show-snackbar');
+           var handler = function(event) {
+             showSnackbarButton.style.backgroundColor = '';
+           };
+           showSnackbarButton.addEventListener('click', function() {
+             'use strict';
+             showSnackbarButton.style.backgroundColor = '#' + Math.floor(Math.random() * 0xFFFFFF).toString(16);
+             var data = {
+               message: 'Button color changed.',
+               timeout: 2000,
+               actionHandler: handler,
+               actionText: 'Undo'
+             };
+             snackbarContainer.MaterialSnackbar.showSnackbar(data);
+           });
+         }());
+      </script>
+      <!-- Colored raised button -->
+      <button onclick="myButtonClicked()" class="mdl-button mdl-js-button mdl-button--raised mdl-button-">
+         <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+         <script>
+            function myButtonClicked() {
+              alert("For my next webpages, you shall get ready to laugh out loud because I have prepared for you a series of funny dad jokes. Put your seat belt on, and click on the link to the second webpage, followed by the third one! Have fun! ")
+            }
+         </script>
+         <h1>Hello, World! with JS</h1>
+         <!-- Colored raised button -->
+      <button onclick="myButtonClicked()" class="mdl-button mdl-js-button mdl-button--raised mdl-button--"> Overview </button>
       <br>
-        <br>
-    <p> Here is a link to my <a href=./index2.html> second</a> page. </p>
-    <br>
-    <p> Here is a link to my <a href=./index3.html> third</a> page. </p>
       <br>
-      
-    <center><h5> "Laughter is the sun that drives winter from the human face." 
+      <p> Here is a link to my <a href=./index2.html> second</a> page. </p>
       <br>
-      -Victor Hugo</h5></center>
-    <br>
-     <br>
+      <p> Here is a link to my <a href=./index3.html> third</a> page. </p>
+      <br>
       <center>
-        <img src="./images/laughter.jpg" alt="Laughter!" width="500"> 
+         <h5> "Laughter is the sun that drives winter from the human face." 
+            <br>
+            -Victor Hugo
+         </h5>
       </center>
-      </body>
+      <br>
+      <br>
+      <center>
+         <img src="./images/laughter.jpg" alt="Laughter!" width="500"> 
+      </center>
+   </body>
 </html>

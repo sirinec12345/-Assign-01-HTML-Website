@@ -1,224 +1,196 @@
 <!DOCTYPE html>
 <html>
-<head>
-
-  <!--Meta data-->
-    <meta charset="utf-8">
-    <meta name="description" content="Laugh Out Loud!!!">
-    <meta name="keywords" content="immaculata, ics2o">
-    <meta name="author" content="Ms Raffin">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" integrity="sha512-+prA/YY6I9Oo36L8RZKzVmqMf6U1aVUWea6uQ7Vq3/DL9/lC0Lg4Bc1jK4xs+PObPUg/iUG1lAm5x5oHjfsXzA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Knock Knock...Who's there?</title>
-
-
-    <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="./fav_index/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./fav_index/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./fav_index/favicon-16x16.png">
-    <link rel="manifest" href="./fav_index/site.webmanifest">
-    
-<link rel="stylesheet" type="text/css" href="style3.css">  </head>
-
-  
-  <!-- Include the MDL CSS -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.pink-deep_purple.min.css">
-      <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script> 
-
-  
-  <!-- Include the MDL JavaScript -->
-  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-  <style>
-    .mdl-tooltip {
+   <head>
+      <!--Meta data-->
+      <meta charset="utf-8">
+      <meta name="description" content="Knock Knock Jokes">
+      <meta name="keywords" content="immaculata, ics2o">
+      <meta name="author" content="Sirine Cherkaoui">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" integrity="sha512-+prA/YY6I9Oo36L8RZKzVmqMf6U1aVUWea6uQ7Vq3/DL9/lC0Lg4Bc1jK4xs+PObPUg/iUG1lAm5x5oHjfsXzA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <title>Knock Knock...Who's there?</title>
+      <!-- Favicon -->
+      <link rel="apple-touch-icon" sizes="180x180" href="./fav_index/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="./fav_index/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="./fav_index/favicon-16x16.png">
+      <link rel="manifest" href="./fav_index/site.webmanifest">
+      <link rel="stylesheet" type="text/css" href="style3.css">
+   </head>
+   <!-- Include the MDL CSS -->
+   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+   <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.pink-deep_purple.min.css">
+   <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script> 
+   <!-- Include the MDL JavaScript -->
+   <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+   <style>
+      .mdl-tooltip {
       color: #fff;
       background-color: rgba(0,0,0,0.8);
-    }
-  </style>
-  <script>
-    function showAnswer(id) {
-      var x = document.getElementById(id);
-      if (x.style.display === "none") {
-        x.style.display = "block";
-      } else {
-        x.style.display = "none";
       }
-    }
-
-    function showPopup(message) {
-      var popup = document.querySelector('.mdl-js-snackbar');
-      popup.MaterialSnackbar.showSnackbar({
-        message: message
-      });
-    }
-  </script>
-</head>
-<body>
-  <h1>Knock Knock Jokes</h1>
-  
-  <!-- Joke 1 -->
-  <div class="mdl-grid">
-    <div class="mdl-cell mdl-cell--8-col">
-      <p>1. Knock knock.               
-</p>
-      <p>Who's there?</p>
-      <label class="mdl-switch mdl-js-switch" for="joke1">
-        <input type="checkbox" id="joke1" class="mdl-switch__input" onchange="showAnswer('answer1')">
-        <span class="mdl-switch__label">Nobel</span>
-      </label>
-      <center><img src=./images/handknocking.jpeg alt="knocking"></center>
+   </style>
+   <script>
+      function showAnswer(id) {
+        var x = document.getElementById(id);
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
       
-      <p id="answer1" style="display: none;">
-        Nobel who?<br>
-        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="showPopup('Boo who? Don’t cry, it’s just a joke!')">Nobel…that’s why I knocked!</button>
-      </p>
-      
-    </div>
-    <div class="mdl-cell mdl-cell--4-col"></div>
-  </div>
-
-  
-  
-  <!-- Joke 2 -->
-  <div class="mdl-grid">
-    <div class="mdl-cell mdl-cell--8-col">
-      <p>2. Knock knock.</p>
-      <p>Who's there?</p>
-      <label class="mdl-switch mdl-js-switch" for="joke2">
-            
-
-        <input type="checkbox" id="joke2" class="mdl-switch__input" onchange="showAnswer('answer2')">
-        <span class="mdl-switch__label">Who</span>
-      </label>
-       <center><img src=./images/owl.png alt="owl" width="200" height="200" ></center>
-      <p id="answer2" style="display: none;">
-       Who who?<br>
-        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="showPopup('Alpaca the suitcase, you load up the car!')">I didn't know you were an owl.</button>
-      </p>
-    </div>
-    <div class="mdl-cell mdl-cell--4-col"></div>
-  </div>
-  
-   <!-- Joke 3 -->
-  <div class="mdl-grid">
-    <div class="mdl-cell mdl-cell--8-col">
-      <p>3. Knock knock.</p>
-      <p>Who's there?</p>
-      <label class="mdl-switch mdl-js-switch" for="joke3">
-        <input type="checkbox" id="joke3" class="mdl-switch__input" onchange="showAnswer('answer3')">
-        <span class="mdl-switch__label">Needle</span>
-      </label>
-      <center><img src=./images/greyneedle.png alt="needle" width="200" height="200" ></center>
-      <p id="answer3" style="display: none;">
-       Needle who?<br>
-        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="showPopup('Alpaca the suitcase, you load up the car!')">Needle little help right now.</button>
-        
-      </p>
-    </div>
-    <div class="mdl-cell mdl-cell--4-col"></div>
-  </div>
-
-
-  <!-- Joke 4 -->
-  <div class="mdl-grid">
-    <div class="mdl-cell mdl-cell--8-col">
-      <p>4. Knock knock.</p>
-      <p>Who's there?</p>
-      <label class="mdl-switch mdl-js-switch" for="joke4">
-        <input type="checkbox" id="joke4" class="mdl-switch__input" onchange="showAnswer('answer4')">
-        <span class="mdl-switch__label">A herd </span>
-      </label>
+      function showPopup(message) {
+        var popup = document.querySelector('.mdl-js-snackbar');
+        popup.MaterialSnackbar.showSnackbar({
+          message: message
+        });
+      }
+   </script>
+   </head>
+   <body>
+      <h1>Knock Knock...Who's there?</h1>
+      <!-- Joke 1 -->
+      <div class="mdl-grid">
+         <div class="mdl-cell mdl-cell--8-col">
+            <p>1. Knock knock.               </p>
+            <p>Who's there?</p>
+            <label class="mdl-switch mdl-js-switch" for="joke1">
+            <input type="checkbox" id="joke1" class="mdl-switch__input" onchange="showAnswer('answer1')">
+            <span class="mdl-switch__label">Nobel</span>
+            </label>
+            <center><img src=./images/handknocking.jpeg alt="knocking"></center>
+            <p id="answer1" style="display: none;">
+               Nobel who?<br>
+               <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="showPopup('Boo who? Don’t cry, it’s just a joke!')">Nobel…that’s why I knocked!</button>
+            </p>
+         </div>
+         <div class="mdl-cell mdl-cell--4-col"></div>
+      </div>
+      <!-- Joke 2 -->
+      <div class="mdl-grid">
+         <div class="mdl-cell mdl-cell--8-col">
+            <p>2. Knock knock.</p>
+            <p>Who's there?</p>
+            <label class="mdl-switch mdl-js-switch" for="joke2">
+            <input type="checkbox" id="joke2" class="mdl-switch__input" onchange="showAnswer('answer2')">
+            <span class="mdl-switch__label">Who</span>
+            </label>
+            <center><img src=./images/owl.png alt="owl" width="200" height="200" ></center>
+            <p id="answer2" style="display: none;">
+               Who who?<br>
+               <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="showPopup('Alpaca the suitcase, you load up the car!')">I didn't know you were an owl.</button>
+            </p>
+         </div>
+         <div class="mdl-cell mdl-cell--4-col"></div>
+      </div>
+      <!-- Joke 3 -->
+      <div class="mdl-grid">
+         <div class="mdl-cell mdl-cell--8-col">
+            <p>3. Knock knock.</p>
+            <p>Who's there?</p>
+            <label class="mdl-switch mdl-js-switch" for="joke3">
+            <input type="checkbox" id="joke3" class="mdl-switch__input" onchange="showAnswer('answer3')">
+            <span class="mdl-switch__label">Needle</span>
+            </label>
+            <center><img src=./images/greyneedle.png alt="needle" width="200" height="200" ></center>
+            <p id="answer3" style="display: none;">
+               Needle who?<br>
+               <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="showPopup('Alpaca the suitcase, you load up the car!')">Needle little help right now.</button>
+            </p>
+         </div>
+         <div class="mdl-cell mdl-cell--4-col"></div>
+      </div>
+      <!-- Joke 4 -->
+      <div class="mdl-grid">
+         <div class="mdl-cell mdl-cell--8-col">
+            <p>4. Knock knock.</p>
+            <p>Who's there?</p>
+            <label class="mdl-switch mdl-js-switch" for="joke4">
+            <input type="checkbox" id="joke4" class="mdl-switch__input" onchange="showAnswer('answer4')">
+            <span class="mdl-switch__label">A herd </span>
+            </label>
             <center><img src=./images/herd.avif alt="herd" width="200" height="200" ></center>
-
-      <p id="answer4" style="display: none;">
-        A herd who?<br>
-        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="showPopup('Alpaca the suitcase, you load up the car!')">A herd you were home, so I came.</button>
-      </p>
-    </div>
-    <div class="mdl-cell mdl-cell--4-col"></div>
-  </div>
-
-  <!-- Joke 5 -->
-  <div class="mdl-grid">
-    <div class="mdl-cell mdl-cell--8-col">
-      <p> 5. Knock knock. </p>
-      <p>Who's there?</p>
-      <label class="mdl-switch mdl-js-switch" for="joke5">
-        <input type="checkbox" id="joke5" class="mdl-switch__input" onchange="showAnswer('answer5')">
-        <span class="mdl-switch__label">Roach</span>
-      </label>
-                  <center><img src=./images/roach.webp alt="roach" width="200" height="200" ></center>
-
-      <p id="answer5" style="display: none;">
-        Roach who?!<br>
-        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="showPopup('Alpaca the suitcase, you load up the car!')">Roach you a letter. Did you get it?
-</button>
-      </p>
-    </div>
-    <div class="mdl-cell mdl-cell--4-col"></div>
-  </div>
-
-<!-- MDL Progress Bar with Indeterminate Progress -->
-<div id="p2" class="mdl-progress mdl-js-progress mdl-progress__indeterminate"></div>
-
-  <p> What was your favorite joke? Please press "enter" after you have entered your response.</p>
-<!-- Numeric Textfield -->
-<center>
-  <form action="#">
-    <div class="mdl-textfield mdl-js-textfield">
-      <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample2" onkeydown="checkInput(event)">
-      <label class="mdl-textfield__label" for="sample2">Number...</label>
-      <span class="mdl-textfield__error">Input is not a number!</span>
-    </div>
-  </form>
-</center>
-
-<script>
-  function checkInput(event) {
-    if (event.keyCode === 13) {
-      const enteredValue = document.getElementById('sample2').value;
-      if (!isNaN(enteredValue)) {
-        alert('Thank you for your response!');
-      }
-    }
-  }
-</script>
-
-
-
-  <p> On a scale from 1 to 10, how much did you like it?</p>
-
- <!-- Default Slider -->
-<center><input class="mdl-slider mdl-js-slider" type="range"
-  min="0" max="10" value="0" tabindex="0"> </center>
-
-<br>
-  <br>
-
-  <!-- Bootstrap door icon -->
-<center><p>Knock on this door</p>
-<svg id="door-icon" xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-door-open" viewBox="0 0 16 16">
-  <path d="M8.5 10c-.276 0-.5-.448-.5-1s.224-1 .5-1 .5.448.5 1-.224 1-.5 1z"/>
-  <path d="M10.828.122A.5.5 0 0 1 11 .5V1h.5A1.5 1.5 0 0 1 13 2.5V15h1.5a.5.5 0 0 1 0 1h-13a.5.5 0 0 1 0-1H3V1.5a.5.5 0 0 1 .43-.495l7-1a.5.5 0 0 1 .398.117zM11.5 2H11v13h1V2.5a.5.5 0 0 0-.5-.5zM4 1.934V15h6V1.077l-6 .857z."/>
-</svg>
-
-<script>
-  const doorIcon = document.getElementById('door-icon');
-  
-  doorIcon.addEventListener('click', function() {
-    alert('Thank you so much for you time in exploring my webpages. I hope you laughed and enjoyed! See you next time!');
-  });
-</script> </center>
-  
-<br>
-  <br>
-  <center><p> Here is a link to my <a href=./index.html> first</a> page. </p>
-    <br>
+            <p id="answer4" style="display: none;">
+               A herd who?<br>
+               <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="showPopup('Alpaca the suitcase, you load up the car!')">A herd you were home, so I came.</button>
+            </p>
+         </div>
+         <div class="mdl-cell mdl-cell--4-col"></div>
+      </div>
+      <!-- Joke 5 -->
+      <div class="mdl-grid">
+         <div class="mdl-cell mdl-cell--8-col">
+            <p> 5. Knock knock. </p>
+            <p>Who's there?</p>
+            <label class="mdl-switch mdl-js-switch" for="joke5">
+            <input type="checkbox" id="joke5" class="mdl-switch__input" onchange="showAnswer('answer5')">
+            <span class="mdl-switch__label">Roach</span>
+            </label>
+            <center><img src=./images/roach.webp alt="roach" width="200" height="200" ></center>
+            <p id="answer5" style="display: none;">
+               Roach who?!<br>
+               <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="showPopup('Alpaca the suitcase, you load up the car!')">Roach you a letter. Did you get it?
+               </button>
+            </p>
+         </div>
+         <div class="mdl-cell mdl-cell--4-col"></div>
+      </div>
+      <!-- MDL Progress Bar with Indeterminate Progress -->
+      <div id="p2" class="mdl-progress mdl-js-progress mdl-progress__indeterminate"></div>
+      <p> What was your favorite joke? Please press "enter" after you have entered your response.</p>
+      <!-- Numeric Textfield -->
+      <center>
+         <form action="#">
+            <div class="mdl-textfield mdl-js-textfield">
+               <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample2" onkeydown="checkInput(event)">
+               <label class="mdl-textfield__label" for="sample2">Number...</label>
+               <span class="mdl-textfield__error">Input is not a number!</span>
+            </div>
+         </form>
+      </center>
+      <script>
+         function checkInput(event) {
+           if (event.keyCode === 13) {
+             const enteredValue = document.getElementById('sample2').value;
+             if (!isNaN(enteredValue)) {
+               alert('Thank you for your response!');
+             }
+           }
+         }
+      </script>
+      <p> On a scale from 1 to 10, how much did you like it?</p>
+      <!-- Default Slider -->
+      <center><input class="mdl-slider mdl-js-slider" type="range"
+         min="0" max="10" value="0" tabindex="0"> </center>
       <br>
-    <p> Here is a link to my <a href=./index2.html> second</a> page. </p> </center>
-  <br>
-  <br>
-
-</body>
+      <br>
+      <!-- Bootstrap door icon -->
+      <center>
+         <p>Knock on this door</p>
+         <svg id="door-icon" xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-door-open" viewBox="0 0 16 16">
+            <path d="M8.5 10c-.276 0-.5-.448-.5-1s.224-1 .5-1 .5.448.5 1-.224 1-.5 1z"/>
+            <path d="M10.828.122A.5.5 0 0 1 11 .5V1h.5A1.5 1.5 0 0 1 13 2.5V15h1.5a.5.5 0 0 1 0 1h-13a.5.5 0 0 1 0-1H3V1.5a.5.5 0 0 1 .43-.495l7-1a.5.5 0 0 1 .398.117zM11.5 2H11v13h1V2.5a.5.5 0 0 0-.5-.5zM4 1.934V15h6V1.077l-6 .857z."/>
+         </svg>
+         <script>
+            const doorIcon = document.getElementById('door-icon');
+            
+            doorIcon.addEventListener('click', function() {
+              alert('Thank you so much for you time in exploring my webpages. I hope you laughed and enjoyed! See you next time!');
+            });
+         </script> 
+      </center>
+      <br>
+      <br>
+      <center>
+         <p> Here is a link to my <a href=./index.html> first</a> page. </p>
+         <br>
+         <br>
+         <p> Here is a link to my <a href=./index2.html> second</a> page. </p>
+        <br>
+        <br>
+         <p> Here is a <a href="https://parade.com/944054/parade/knock-knock-jokes/">link </a> to a knock knock joke webpage. </p>
+      </center>
+      <br> 
+      <br>
+   </body>
 </html>
   

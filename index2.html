@@ -1,163 +1,133 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="description" content="Laugh Out Loud!!!">
-    <meta name="keywords" content="immaculata, ics2o">
-    <meta name="author" content="Ms Raffin">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <head>
+      <meta charset="utf-8">
+      <meta name="description" content="Laugh Out Loud!!!">
+      <meta name="keywords" content="immaculata, ics2o">
+      <meta name="author" content="Sirine Cherkaoui">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" integrity="sha512-+prA/YY6I9Oo36L8RZKzVmqMf6U1aVUWea6uQ7Vq3/DL9/lC0Lg4Bc1jK4xs+PObPUg/iUG1lAm5x5oHjfsXzA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-        
-    <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="./fav_index/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./fav_index/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./fav_index/favicon-16x16.png">
-    <link rel="manifest" href="./fav_index/site.webmanifest">
-    
-    <title>Laugh Out Loud!!!</title>
-  
-<link rel="stylesheet" type="text/css" href="style2.css">  </head>
-  
-     <!-- Google's MDL style -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.cyan-light_blue.min.css" />
-      <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script> 
-
-
-    <!-- Happy face icon -->
-<button onclick="myButtonClicked()" class="mdl-button mdl-js-button mdl-button--icon">
-  <i class="material-icons">mood</i>
-</button> 
-
-<div class="popup" onclick="myFunction()">
-  <script>
-    function myButtonClicked() {
-      alert("It's loading! Click 'OK' whenever you're ready to laugh!");
-    }
-  </script>
-  <span class="popuptext" id="myPopup">
-    
-    </button>
-  </span>
-</div>
-
-    
-<!-- MDL Progress Bar with Buffering -->
-<div id="p3" class="mdl-progress mdl-js-progress"></div>
-<script>
-  document.querySelector('#p3').addEventListener('mdl-componentupgraded', function() {
-    this.MaterialProgress.setProgress(33);
-    this.MaterialProgress.setBuffer(87);
-  });
-</script>
-
-    <!-- MDL Buttons -->
-    
-<body>
-    <h1> Laugh Out Loud!!! </h1>
-
-    <div class="mdl-grid">
+      <!-- Favicon -->
+      <link rel="apple-touch-icon" sizes="180x180" href="./fav_index/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="./fav_index/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="./fav_index/favicon-16x16.png">
+      <link rel="manifest" href="./fav_index/site.webmanifest">
+      <title>Laugh Out Loud!!!</title>
+      <link rel="stylesheet" type="text/css" href="style2.css">
+   </head>
+   <!-- Google's MDL style -->
+   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+   <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.cyan-light_blue.min.css" />
+   <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script> 
+   <!-- Happy face icon -->
+   <button onclick="myButtonClicked()" class="mdl-button mdl-js-button mdl-button--icon">
+   <i class="material-icons">mood</i>
+   </button> 
+   <div class="popup" onclick="myFunction()">
+      <script>
+         function myButtonClicked() {
+           alert("It's loading! Click 'OK' whenever you're ready to laugh!");
+         }
+      </script>
+      <span class="popuptext" id="myPopup">
+      </button>
+      </span>
+   </div>
+   <!-- MDL Progress Bar with Buffering -->
+   <div id="p3" class="mdl-progress mdl-js-progress"></div>
+   <script>
+      document.querySelector('#p3').addEventListener('mdl-componentupgraded', function() {
+        this.MaterialProgress.setProgress(33);
+        this.MaterialProgress.setBuffer(87);
+      });
+   </script>
+   <!-- MDL Buttons -->
+   <body>
+      <h1> Laugh Out Loud!!! </h1>
+      <div class="mdl-grid">
       <div class="mdl-cell mdl-cell--12-col">
       </div>
-      
       <div class="mdl-cell mdl-cell--4-col joke">
-        <h4>Joke #1</h4>
-        <p>Why don't scientists trust atoms? </p>
-        <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored answer-btn" onclick="alert('Because they make up everything!')">Answer</button>
+         <h4>Joke #1</h4>
+         <p>Why don't scientists trust atoms? </p>
+         <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored answer-btn" onclick="alert('Because they make up everything!')">Answer</button>
       </div>
-      
       <div class="mdl-cell mdl-cell--4-col joke">
-        <h4>Joke #2</h4>
-        <p>What do you call a bagel that can fly? </p>
-        <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored answer-btn" onclick="alert(' A plain bagel!')">Answer</button>
+         <h4>Joke #2</h4>
+         <p>What do you call a bagel that can fly? </p>
+         <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored answer-btn" onclick="alert(' A plain bagel!')">Answer</button>
       </div>
-      
       <div class="mdl-cell mdl-cell--4-col joke">
-        <h4>Joke #3</h4>
-        <p>Why did the banana go to the doctor? </p>
-        <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored answer-btn" onclick="alert('Because it was not peeling well!')">Answer</button>
+         <h4>Joke #3</h4>
+         <p>Why did the banana go to the doctor? </p>
+         <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored answer-btn" onclick="alert('Because it was not peeling well!')">Answer</button>
       </div>
-      
       <div class="mdl-cell mdl-cell--4-col joke">
-        <h4>Joke #4</h4>
-        <p>Why do seagulls fly over sea? </p>
-        <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored answer-btn" onclick="alert('Because if they flew over bay, they\'d be bagels!')">Answer</button>
+         <h4>Joke #4</h4>
+         <p>Why do seagulls fly over sea? </p>
+         <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored answer-btn" onclick="alert('Because if they flew over bay, they\'d be bagels!')">Answer</button>
       </div>
-      
       <div class="mdl-cell mdl-cell--4-col joke">
-        <h4>Joke #5</h4>
-        <p>Why don't any other shapes talk to circles? </p>
-        <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored answer-btn" onclick="alert('Because there’s no point.')">Answer</button>
+         <h4>Joke #5</h4>
+         <p>Why don't any other shapes talk to circles? </p>
+         <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored answer-btn" onclick="alert('Because there’s no point.')">Answer</button>
       </div>
-            <div class="mdl-cell mdl-cell--4-col joke">
-        <h4>Joke #6</h4>
-        <p>Why do bees have sticky hair?
-</p>
-        <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored answer-btn" onclick="alert('Because they use a honeycomb.')">Answer</button>
-      </div>
-      
       <div class="mdl-cell mdl-cell--4-col joke">
-        <h4>Joke #7</h4>
-        <p>Why is Europe like a frying pan?
-</p>
-        <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored answer-btn" onclick="alert('Because it has Greece at the bottom.')">Answer</button>
+         <h4>Joke #6</h4>
+         <p>Why do bees have sticky hair?</p>
+         <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored answer-btn" onclick="alert('Because they use a honeycomb.')">Answer</button>
       </div>
-      
       <div class="mdl-cell mdl-cell--4-col joke">
-        <h4>Joke #8</h4>
-        <p>How can you spell cold with two letters?</p>
-        <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored answer-btn" onclick="alert('IC (icy)')">Answer</button>
+         <h4>Joke #7</h4>
+         <p>Why is Europe like a frying pan?</p>
+         <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored answer-btn" onclick="alert('Because it has Greece at the bottom.')">Answer</button>
       </div>
-      
       <div class="mdl-cell mdl-cell--4-col joke">
-        <h4>Joke #9</h4>
-        <p>What has a head, a tail, is brown, and has no legs?
-</p>
-        <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored answer-btn" onclick="alert('A penny!')">Answer</button>
+         <h4>Joke #8</h4>
+         <p>How can you spell cold with two letters?</p>
+         <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored answer-btn" onclick="alert('IC (icy)')">Answer</button>
       </div>
-      
-       <!-- For Bootstrap -->
-<center>
-  <h5> Below, please give me your opinion on the jokes. </h5>
-  <br> 
-  <div class="btn-group">
-    <button class="btn" onclick="showBootstrapPopup('Thank you for your input!')">I laughed so much!</button>
-    <button class="btn" onclick="showBootstrapPopup('Thank you for your input!')">Meh, answers were quite obvious!</button>
-    <button class="btn" onclick="showBootstrapPopup('Thank you for your input!')">Worse Dad jokes ever!</button>
-  </div>
-</center>
-
-<!-- Script for Bootstrap popup -->
-<script>
-  function showBootstrapPopup(message) {
-    alert(message);
-  }
-</script>
-      
-<br>
-<br>
-
-
-  <!-- Icon badge on icon -->
-  <div class="material-icons mdl-badge mdl-badge--overlap" data-badge="♥" onclick="showMDLPopup()">account_box</div>
-</center>
-
-      <center><p> Here is a link to my <a href=./index.html> first</a> page. </p>
-    <br>
+      <div class="mdl-cell mdl-cell--4-col joke">
+         <h4>Joke #9</h4>
+         <p>What has a head, a tail, is brown, and has no legs?</p>
+         <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored answer-btn" onclick="alert('A penny!')">Answer</button>
+      </div>
+      <!-- For Bootstrap -->
+      <center>
+         <h5> Below, please give me your opinion on the jokes. </h5>
+         <br> 
+         <div class="btn-group">
+            <button class="btn" onclick="showBootstrapPopup('Thank you for your input!')">I laughed so much!</button>
+            <button class="btn" onclick="showBootstrapPopup('Thank you for your input!')">Meh, answers were quite obvious!</button>
+            <button class="btn" onclick="showBootstrapPopup('Thank you for your input!')">Worse Dad jokes ever!</button>
+         </div>
+      </center>
+      <!-- Script for Bootstrap popup -->
+      <script>
+         function showBootstrapPopup(message) {
+           alert(message);
+         }
+      </script>
       <br>
-    <p> Here is a link to my <a href=./index3.html> third</a> page. </p> </center>
-
-<!-- Script for MDL popup -->
-<script>
-  function showMDLPopup() {
-    alert("When you're done answering the question, please proceed to my third webpage.");
-  }
-</script>
-<br>
       <br>
-                          <img src="./images/jerry.gif" alt="Laughter!" width="200" height="200"> 
-              <img src="./images/joke.jpg" alt="Dad joke!" width="300" height="200"> 
-
-  </body>
-  </html>
+      <!-- Icon badge on icon -->
+      <div class="material-icons mdl-badge mdl-badge--overlap" data-badge="♥" onclick="showMDLPopup()">account_box</div>
+      </center>
+      <center>
+         <p> Here is a link to my <a href=./index.html> first</a> page. </p>
+         <br>
+         <br>
+         <p> Here is a link to my <a href=./index3.html> third</a> page. </p>
+      </center>
+      <!-- Script for MDL popup -->
+      <script>
+         function showMDLPopup() {
+           alert("When you're done answering the question, please proceed to my third webpage.");
+         }
+      </script>
+      <br>
+      <br>
+      <img src="./images/jerry.gif" alt="Laughter!" width="200" height="200"> 
+      <img src="./images/joke.jpg" alt="Dad joke!" width="300" height="200"> 
+   </body>
+</html>
